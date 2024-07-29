@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.line {
+    width: 150px;
+    height: 4px;
+    background: #fc036b; /* Pink color from your style.css */
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.ctn {
+    background-color: #fc036b; /* Pink color from your style.css */
+    color: #ffffff; /* White text color */
+    border-radius: 30px;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.ctn:hover {
+    background-color: #ffffff; /* White background on hover */
+    color: #fc036b; /* Pink text color on hover */
+}
+
+/* Servicios */
+.servicios {
+    padding: 5rem 0;
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    text-align: center;
+}
+
+.servicio-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.servicio-item h4 {
+    margin: 1rem 0;
+    color: #49497e; /* Dark purple from your style.css */
+}
+
+.servicio-item p {
+    color: #7c7c7c; /* Grey text color for paragraphs */
+    padding: 0 1rem;
+}
+
+
+/* Movil */
+@media only screen and (max-width: 850px) {
+    .menu-btn {
+        display: block;
+    }
+    .navbar {
+        padding: 0;
+    }
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: #FFFFFF; /* White background for mobile menu */
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .nav-links li {
+        margin: 30px auto;
+    }
+    /* Servicios */
+    .row {
+        flex-direction: column;
+    }
+    .row .col {
+        margin: 20px auto;
+    }
+    .col img {
+        max-width: 90%;
+    }
+    /* Servicios */
+    .servicios-content {
+        width: 100%;
+    }
+    .portafolio .col {
+        width: 100%;
+    }
+    .image-gallery {
+        justify-content: center;
+        align-items: center;
+    }
+    .image-gallery img {
+        width: 90%;
+    }
+    .footer {
+        padding: 10px;
+    }
+}
+
+/* Animacioness */
+img {
+    transition: transform .3s ease;
+}
+img:hover {
+    transform: scale(1.1);
+}
+.ctn:hover {
+    background: #FAFAFA;
+    color: #fc036b;
+    box-shadow: 2px 2px 5px #00000056;
+}
+li:hover {
+    color: #fc036b;
+    cursor: pointer;
+}

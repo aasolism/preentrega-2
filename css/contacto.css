@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.line {
+    width: 150px;
+    height: 4px;
+    background: #fc036b; 
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.ctn {
+    background-color: #fc036b; 
+    color: #ffffff; 
+    border-radius: 30px;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.ctn:hover {
+    background-color: #ffffff; 
+    color: #fc036b; 
+}
+
+/* portafolio */
+.portafolio {
+    padding: 5rem 0;
+}
+
+.portafolio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.content-col {
+    text-align: center;
+}
+
+.content-col h1 {
+    color: #49497e; 
+}
+
+.content-col p {
+    color: #7c7c7c; 
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: auto;
+}
+
+/* movil */
+@media only screen and (max-width: 850px) {
+    .menu-btn {
+        display: block;
+    }
+    .navbar {
+        padding: 0;
+    }
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: #ffffff; 
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .nav-links li {
+        margin: 30px auto;
+    }
+    
+    .portafolio .col {
+        width: 100%;
+    }
+    .image-gallery {
+        justify-content: center;
+        align-items: center;
+    }
+    .image-gallery img {
+        width: 90%;
+    }
+    .footer {
+        padding: 10px;
+    }
+}
+
+/* Animaciones */
+img {
+    transition: transform .3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.ctn:hover {
+    background: #FAFAFA;
+    color: #fc036b; 
+    box-shadow: 2px 2px 5px #00000056;
+}
+
+li:hover {
+    color: #fc036b; 
+    cursor: pointer;
+}
+
+/* Footer */
+footer.footer {
+    background-color: #49497e; 
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: auto;
+}
